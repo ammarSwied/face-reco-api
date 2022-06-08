@@ -37,6 +37,6 @@ app.post('/imageURL', (req, res) => { handleAPI(req, res) });
 
 const PORT = process.env.PORT;
 
-app.listen(3001, ()=> {
-    console.log(`i am running on port 3001 ${PORT} `);
+app.listen(process.env.PORT || 3000, ()=> {
+    console.log(`i am running on port ${PORT} `);
 });
