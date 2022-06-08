@@ -11,11 +11,8 @@ import handleAPI from "./controllers/imageAPI.js";
 const db= knex({
     client: 'pg',
     connection: {
-      host : 'postgresql-closed-95160',
-      user : 'postgres',
-    //   port: 3001,
-      password : '4747',
-      database : 'facereco' 
+      host : process.env.DATABASE_URL,
+      ssl: true,
     }
 });
 
