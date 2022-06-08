@@ -11,7 +11,7 @@ import handleAPI from "./controllers/imageAPI.js";
 const db= knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+      host : 'postgresql-closed-95160',
       user : 'postgres',
     //   port: 3001,
       password : '4747',
